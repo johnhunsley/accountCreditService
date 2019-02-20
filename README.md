@@ -1,2 +1,2 @@
 # accountCreditService
-An example of a microservice which is responsible for crediting accounts which are accessed from the accounts service.
+An example of a microservice which is responsible for crediting accounts which are accessed from the accounts service. Rules are applied when crediting account which are dependent on the account sub-type. This is an example of an implementation of both the Factory and Strategy patterns which are used to decouple the logic for validating and crediting accounts from the account type implementations
