@@ -6,9 +6,21 @@ import com.hunsley.account.model.LimitedAccount;
 import com.hunsley.account.model.SavingsAccount;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author johnhunsley
+ */
 @Service("commandFactory")
 public class CommandFactoryImpl implements CommandFactory {
 
+    /**
+     * <p>
+     *     return a new concrete instance of the {@link CreditAccountCommand} for the given {@link Account} type
+     *     and links the given account instance to the returned command instance.
+     * </p>
+     * @param account
+     * @return a concrete {@link CreditAccountCommand} type
+     * @throws {@link IllegalArgumentException} if the given {@link Account} has no known associated command
+     */
     @Override
     public CreditAccountCommand getCommand(final Account account) {
 

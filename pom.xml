@@ -18,6 +18,11 @@
     <dependencies>
 
         <dependency>
+            <groupId>com.hunsley.account</groupId>
+            <artifactId>spring-account-example</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>com.github.johnhunsley</groupId>
             <artifactId>account</artifactId>
             <version>1.0</version>
@@ -38,12 +43,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
