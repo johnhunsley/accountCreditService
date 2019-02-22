@@ -5,7 +5,7 @@ import com.hunsley.account.model.LimitedAccount;
 
 public class LimitedAccountCreditCommand extends CreditAccountCommand {
 
-    public LimitedAccountCreditCommand(Account account) {
+    LimitedAccountCreditCommand(Account account) {
         super(account);
     }
 

@@ -5,7 +5,7 @@ import com.hunsley.account.model.SavingsAccount;
 
 public class SavingsAccountCreditCommand extends CreditAccountCommand {
 
-    public SavingsAccountCreditCommand(Account account) {
+    SavingsAccountCreditCommand(Account account) {
         super(account);
     }
 

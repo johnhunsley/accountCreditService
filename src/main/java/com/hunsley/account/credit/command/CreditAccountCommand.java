@@ -10,7 +10,7 @@ public abstract class CreditAccountCommand {
      *
      * @param account
      */
-    public CreditAccountCommand(final Account account) {
+    CreditAccountCommand(final Account account) {
         this.account = account;
     }
 
