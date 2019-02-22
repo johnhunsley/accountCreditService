@@ -18,9 +18,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.hunsley.account</groupId>
-            <artifactId>spring-account-example</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.github.johnhunsley</groupId>
+            <artifactId>account</artifactId>
+            <version>1.0</version>
         </dependency>
 
         <dependency>
@@ -38,10 +38,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -89,6 +91,10 @@
         <repository>
             <id>opensourceagility-release</id>
             <url>http://repo.opensourceagility.com/release/</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
