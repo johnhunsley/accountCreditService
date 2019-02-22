@@ -11,6 +11,9 @@ public class SavingsAccountCreditCommand extends CreditAccountCommand {
 
     @Override
     public Double creditAccount(final Double credit) throws CreditAccountCommandException {
+        if(!(account instanceof SavingsAccount))
+            throw new CreditAccountCommandException(account.getClass().getName()+" is not an instance of "+ SavingsAccount.class.getName());
+
         SavingsAccount savingsAccount = (SavingsAccount) account;
 
         if(credit > savingsAccount.getMaxDeposit())

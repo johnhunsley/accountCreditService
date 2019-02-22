@@ -11,6 +11,9 @@ public class LimitedAccountCreditCommand extends CreditAccountCommand {
 
     @Override
     public Double creditAccount(final Double credit) throws CreditAccountCommandException {
+        if(!(account instanceof LimitedAccount))
+            throw new CreditAccountCommandException(account.getClass().getName()+" is not an instance of "+ LimitedAccount.class.getName());
+
         LimitedAccount limitedAccount = (LimitedAccount)account;
 
         if((limitedAccount.getValue() + credit) > limitedAccount.getAccountLimit())
