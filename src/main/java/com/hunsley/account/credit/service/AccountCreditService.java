@@ -16,5 +16,5 @@ public interface AccountCreditService {
      * @param uid
      * @throws AccountCreditException
      */
-    void creditCustomerAccounts(Integer uid) throws AccountCreditException;
+    void creditCustomerAccounts(Integer uid, Double credit) throws AccountCreditException;
 }

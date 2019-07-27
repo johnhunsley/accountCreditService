@@ -20,13 +20,13 @@
         <dependency>
             <groupId>com.hunsley.account</groupId>
             <artifactId>spring-account-example</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.johnhunsley</groupId>
-            <artifactId>account</artifactId>
             <version>1.0</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.github.johnhunsley</groupId>-->
+            <!--<artifactId>account</artifactId>-->
+            <!--<version>1.0</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
